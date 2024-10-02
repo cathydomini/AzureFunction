@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace FunctionApp1
 {
-    public static class Function1
+    public static class AzureFunction
     {
-        [FunctionName("Function1")]
+        [FunctionName("AzureFunction")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
